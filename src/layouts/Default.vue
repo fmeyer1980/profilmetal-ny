@@ -1,6 +1,7 @@
 <template>
   <div class="layout">
     <TheHeader />
+    <g-link to="/about">Tagplader</g-link>
     <transition name="fade" appear mode="out-in">
         <main>
           <slot />

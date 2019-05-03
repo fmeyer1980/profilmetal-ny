@@ -1,14 +1,3 @@
-    // <header class="header">
-    //   <strong>
-    //     <g-link to="/">Gridsome</g-link>
-    //   </strong>
-    //   <nav class="nav">
-    //     <g-link class="nav__link" to="/">Home</g-link>
-    //     <g-link class="nav__link" to="/about">About</g-link>
-    //   </nav>
-    // </header>
-
-
 <template>
   <header class="header">
     <div class="header__top">

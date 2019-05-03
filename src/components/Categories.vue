@@ -124,11 +124,6 @@
         width: calc(100% - 14rem);
          
 
-        
-        .VueCarousel-inner{
- 
-        }
-
         .VueCarousel-pagination{
             height: 26rem;
             position: absolute;
