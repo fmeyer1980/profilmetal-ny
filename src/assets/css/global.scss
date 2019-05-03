@@ -1,0 +1,147 @@
+@import "breakpoints";
+@import "mixins";
+@import "color";
+@import "type";
+@import "spacing";
+@import "btn";
+
+$min_width: 320px;
+$max_width: 1400px;
+$min_font: 6px;
+$max_font: 10px;
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+
+
+$gutter: 3rem;
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+:root{
+  --screen-xs: 575.98px;
+  --screen-sm: 767.98px;
+  --screen-md: 991.98px;
+  --screen-lg: 1143.98px;
+
+  --primary: #E36224;
+  --primary-light: #E25B19;
+  --primary-dark: #E25B19;
+
+  --secondary-light: #1F323D;
+  --secondary: #162C38;
+  --secondary-dark: #10222B;
+
+  --tertiary: #132833;
+}
+
+html{
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  line-height: 1.5;
+  font-family: $base-font;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+.layout{
+  overflow: hidden;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1400px;
+    max-width: 90%;
+
+    &--960{
+        width: 960px;
+    }
+
+}
+
+a{
+  text-decoration: none;
+  color: primary;
+}
+
+.opc{
+
+  &-7{
+    opacity: .7;
+  }
+  &-5{
+    opacity: .5;
+  }
+}
+
+.section-heading{
+  text-align: center;
+
+  .title{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:after{
+      content: "";
+      width: 5rem;
+      height: 3px;
+      background-color: $dark-gray-light;
+      position: absolute;
+      left: 50%;
+      bottom: -1.5rem;
+      transform: translate(-50%);
+    }
+  } 
+}
