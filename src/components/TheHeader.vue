@@ -21,7 +21,7 @@
     </div>
     <div class="header__bottom">
       <div class="container">
-        <g-link class="logo" to="/"><g-image src="../assets/images/logo.png" fit="contain" alt="" /></g-link>
+        <g-link class="logo" to="/"><img src="../assets/images/logo.png" alt="" /></g-link>
         <nav class="nav">
           <ul class="main-menu">
             <li><g-link to="/">Forside</g-link></li>
@@ -200,7 +200,6 @@ export default {
           transform: skewX(35deg);
           box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.08);
       }
-      /* clip-path: polygon(0% 0%, 94% 0%, 100% 100%, 6% 100%); */
 
       
 
@@ -245,11 +244,11 @@ export default {
             transition: width .2s ease-in;
           }
           
-          &:hover{
+          /* &:hover{
             &:after{
               width: 50%;
             }
-          }
+          } */
         }
 
         .active--exact{
