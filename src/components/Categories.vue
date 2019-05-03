@@ -1,11 +1,51 @@
 <template>
     <section class="categories">
-        <div class="container">               
+        <div class="container">
+            
+<!-- <carousel :nav="false" :dots="true" :margin="30" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
+                <div class="categories__item">
+                    <g-image class="categories__item__image" src="~/assets/images/category-img-1.jpg" width="390" height="280" fit="contain" />
+                    <div class="categories__item__content">
+                        <h2 class="heading h3">Ståltagplader</h2>
+                        <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
+
+                        <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                        <g-link class="btn btn--secondary" to="/">læs mere</g-link>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <g-image class="categories__item__image" src="~/assets/images/category-img-2.jpg" width="390" height="280" fit="contain" />
+                    <div class="categories__item__content">
+                        <h2 class="heading h3">Inddækninger</h2>
+                        <p class="opc-7 mt-0 mb-2">Standard- og specialinddækninger til tag…</p>
+                        <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                        <g-link class="btn btn--secondary" to="/">læs mere</g-link>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <g-image class="categories__item__image" src="~/assets/images/category-img-3.jpg" width="390" height="280" fit="contain" />
+                    <div class="categories__item__content">
+                        <h2 class="heading h3">Stålfacade</h2>
+                        <p class="opc-7 mt-0 mb-2">Beklæd og beskyt facaden med stærkt stål…</p>
+                        <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                        <g-link class="btn btn--secondary" to="/">læs mere</g-link>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <g-image class="categories__item__image" src="~/assets/images/category-img-1.jpg" width="390" height="280" fit="contain" />
+                    <div class="categories__item__content">
+                        <h2 class="heading h3">Ståltagplader</h2>
+                        <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
+                        <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                        <g-link class="btn btn--secondary" to="/">læs mere</g-link>
+                    </div>
+                </div>
+            </carousel>            -->
             <ClientOnly>
                 <carousel :perPageCustom="[[320, 1], [576, 2], [960, 3]]" :centerMode="true">
                     <slide>
                         <div class="categories__item">
-                            <g-image class="categories__item__image" src="~/assets/images/category-img-1.jpg" width="390" height="280" fit="contain" />
+                            <g-image class="categories__item__image" src="~/assets/images/category-img-1.webp" width="776" height="560" fit="inside" />
                             <div class="categories__item__content">
                                 <h2 class="heading h3">Ståltagplader</h2>
                                 <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
@@ -17,7 +57,7 @@
                     </slide>
                     <slide>
                         <div class="categories__item">
-                            <g-image class="categories__item__image" src="~/assets/images/category-img-2.jpg" width="390" height="280" fit="contain" />
+                            <g-image class="categories__item__image" src="~/assets/images/category-img-2.jpg" width="776" height="560" fit="inside" />
                             <div class="categories__item__content">
                                 <h2 class="heading h3">Inddækninger</h2>
                                 <p class="opc-7 mt-0 mb-2">Standard- og specialinddækninger til tag…</p>
@@ -28,7 +68,7 @@
                     </slide>
                     <slide>
                         <div class="categories__item">
-                            <g-image class="categories__item__image" src="~/assets/images/category-img-3.jpg" width="390" height="280" fit="contain" />
+                            <g-image class="categories__item__image" src="~/assets/images/category-img-3.jpg" width="776" height="560" fit="inside" />
                             <div class="categories__item__content">
                                 <h2 class="heading h3">Stålfacade</h2>
                                 <p class="opc-7 mt-0 mb-2">Beklæd og beskyt facaden med stærkt stål…</p>
@@ -39,7 +79,7 @@
                     </slide>
                     <slide>
                         <div class="categories__item">
-                            <g-image class="categories__item__image" src="~/assets/images/category-img-1.jpg" width="390" height="280" fit="contain" />
+                            <g-image class="categories__item__image" src="~/assets/images/category-img-1.jpg" width="776" height="560" fit="inside" />
                             <div class="categories__item__content">
                                 <h2 class="heading h3">Ståltagplader</h2>
                                 <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
@@ -90,7 +130,7 @@
         }
 
         .VueCarousel-pagination{
-            height: 25rem;
+            height: 26rem;
             position: absolute;
             top: 0;
             right: -14rem;
@@ -158,15 +198,11 @@
 
       img{
           width: 100%;
-          height: 25rem;
+          height: 26rem;
           object-fit: cover;
       }
 
       &__content{
-
-          .heading{
-
-          }
 
           p{
               font-size: 1.8rem;

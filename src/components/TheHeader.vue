@@ -35,7 +35,7 @@
         <g-link class="logo" to="/"><img src="../assets/images/logo.png" alt="" /></g-link>
         <nav class="nav">
           <ul class="main-menu">
-            <li><g-link to="/">Forside</g-link></li>
+            <!-- <li><g-link to="/">Forside</g-link></li> -->
             <li><g-link to="/about">Tagplader</g-link></li>
             <li><g-link to="/cases">Facadebeklædning</g-link></li>
             <li><g-link to="/om-os">Inddækninger</g-link></li>
@@ -44,6 +44,13 @@
             <li><g-link to="/kontact">Tagrender</g-link></li>
           </ul>
         </nav>
+        <div class="search">
+          <input class="search__input" type=search>
+          <button class="search__btn" type="submit"></button>
+        </div>
+        <div class="basket">
+
+        </div>
       </div>
     </div>
   </header>
@@ -230,6 +237,11 @@ export default {
           font-weight: 600;
           text-transform: uppercase;
           position: relative;
+          font-size: 1.6rem;
+          @media (max-width: $screen-lg) {
+            font-size: 1.5rem;
+          }
+
           &:after{
             content: "";
             height: 3px;

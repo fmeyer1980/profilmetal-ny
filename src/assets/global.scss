@@ -1,9 +1,9 @@
-@import "breakpoints";
-@import "mixins";
-@import "color";
-@import "type";
-@import "spacing";
-@import "btn";
+@import "css/breakpoints";
+@import "css/mixins";
+@import "css/color";
+@import "css/type";
+@import "css/spacing";
+@import "css/btn";
 
 $min_width: 320px;
 $max_width: 1400px;
@@ -51,11 +51,6 @@ $gutter: 3rem;
 }
 
 :root{
-  --screen-xs: 575.98px;
-  --screen-sm: 767.98px;
-  --screen-md: 991.98px;
-  --screen-lg: 1143.98px;
-
   --primary: #E36224;
   --primary-light: #E25B19;
   --primary-dark: #E25B19;

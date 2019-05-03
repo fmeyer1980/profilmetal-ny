@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <TheHeader />
-    <transition name="fade" appear>
+    <transition name="fade" appear mode="out-in">
         <main>
           <slot />
         </main>
@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped>
 
 .fade-enter-active {
   transition: opacity .3s ease-in;
