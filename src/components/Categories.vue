@@ -45,7 +45,7 @@
                 <carousel :perPageCustom="[[320, 1], [576, 2], [960, 3]]" :centerMode="true">
                     <slide>
                         <div class="categories__item">
-                            <g-image class="categories__item__image" src="~/assets/images/category-img-1.webp" width="776" height="560" fit="inside" />
+                            <g-image class="categories__item__image" src="~/assets/images/category-img-1.jpg" width="776" height="560" fit="inside" />
                             <div class="categories__item__content">
                                 <h2 class="heading h3">Ståltagplader</h2>
                                 <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>

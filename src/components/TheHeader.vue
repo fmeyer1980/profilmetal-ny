@@ -37,11 +37,11 @@
           <ul class="main-menu">
             <!-- <li><g-link to="/">Forside</g-link></li> -->
             <li><g-link to="/about">Tagplader</g-link></li>
-            <li><g-link to="/cases">Facadebeklædning</g-link></li>
-            <li><g-link to="/om-os">Inddækninger</g-link></li>
-            <li><g-link to="/om-os">Tilbehør</g-link></li>
-            <li><g-link to="/om-os">Undertag</g-link></li>
-            <li><g-link to="/kontact">Tagrender</g-link></li>
+            <li><g-link to="/facadebeklaedning">Facadebeklædning</g-link></li>
+            <li><g-link to="/inddaeninger">Inddækninger</g-link></li>
+            <li><g-link to="/tilbehor">Tilbehør</g-link></li>
+            <li><g-link to="/undertag">Undertag</g-link></li>
+            <li><g-link to="/tagrender">Tagrender</g-link></li>
           </ul>
         </nav>
         <div class="search">
