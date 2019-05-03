@@ -21,10 +21,10 @@
     </div>
     <div class="header__bottom">
       <div class="container">
-        <g-link class="logo" to="/"><img src="../assets/images/logo.png" alt="" /></g-link>
+        <g-link class="logo" to="/"><g-image src="../assets/images/logo.png" fit="contain" alt="" /></g-link>
         <nav class="nav">
           <ul class="main-menu">
-            <!-- <li><g-link to="/">Forside</g-link></li> -->
+            <li><g-link to="/">Forside</g-link></li>
             <li><g-link to="/about">Tagplader</g-link></li>
             <li><g-link to="/facadebeklaedning">Facadebeklædning</g-link></li>
             <li><g-link to="/inddaeninger">Inddækninger</g-link></li>
@@ -80,6 +80,7 @@ export default {
       &__logo{
         height: 2.6rem;
         margin-right: $gutter / 2;
+        
       }
 
       &__stars{
@@ -148,6 +149,7 @@ export default {
 
       img{
         height: 100%;
+        width: auto;
       }
       
     }
@@ -227,6 +229,7 @@ export default {
           text-transform: uppercase;
           position: relative;
           font-size: 1.6rem;
+          height: 100%;;
           @media (max-width: $screen-lg) {
             font-size: 1.5rem;
           }

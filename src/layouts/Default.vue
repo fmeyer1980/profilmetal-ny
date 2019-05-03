@@ -1,11 +1,9 @@
 <template>
   <div class="layout">
     <TheHeader />
-    <transition name="fade" appear mode="out-in">
-        <main>
+
           <slot />
-        </main>
-      </transition>
+
   </div>
 </template>
 
@@ -29,6 +27,7 @@ export default {
 .fade-enter {
   opacity: 0;
 }
+
 
 
 
