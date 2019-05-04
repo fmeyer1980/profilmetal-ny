@@ -60,12 +60,12 @@ export default {
         .text{
 
             h1{
-                font-size: 6rem;
+                font-size: 5.2rem;
                 margin: 0;
                 text-transform: uppercase;
             }
             p{
-                font-size: 2.6rem;
+                font-size: 2.4rem;
                 margin: 0;
                 font-weight: 400;
             }
